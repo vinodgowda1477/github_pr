@@ -8,15 +8,6 @@ import smtplib
 from email.mime.text import MIMEText
 
 
-# """
-# System arguments
-# """
-# repo_owner = sys.argv[1]
-# repo_name = sys.argv[2]
-# sender_email = sys.argv[3]
-# receiver_email = sys.argv[4]
-# gmail_password = sys.argv[5]
-
 """
 static vars go here 
 """
@@ -25,11 +16,11 @@ _REPO_OWNER = sys.argv[1]
 _REPO = sys.argv[2]
 _LIST_PR_URL = f"https://api.github.com/repos/{_REPO_OWNER}/{_REPO}/pulls?state=all"
 
-### MAIL DETAILS
-_SUBJECT = "List of PR: Repo: %s" % _REPO
-_SENDER = "test@gmail.com"
-_RECIPIENTS = ["test2@gmail.com"]
-_PASSWORD = "test@test"
+# ### MAIL DETAILS
+# _SUBJECT = "List of PR: Repo: %s" % _REPO
+# _SENDER = sys.argv[3]
+# _RECIPIENTS = sys.argv[4].split()
+# _PASSWORD = sys.argv[5]
 
 
 """
